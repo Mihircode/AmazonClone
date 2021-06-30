@@ -5,7 +5,7 @@ class ProductCarousel extends StatelessWidget {
   final String title;
   final List<Product> products;
 
-  ProductCarousel({required this.title, required this.products});
+  ProductCarousel({@required this.title, @required this.products});
   _buildProductCard(int index) {
     return Container(
       margin: EdgeInsets.all(10.0),

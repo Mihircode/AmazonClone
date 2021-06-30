@@ -1,4 +1,5 @@
 import 'package:amazonclone/screens/home_screen.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,13 +11,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Amzone CLone',
+      title: 'Amazone CLone',
       theme: ThemeData(
         primaryIconTheme:
             Theme.of(context).primaryIconTheme.copyWith(color: Colors.black),
       ),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: AnimatedSplashScreen(
+        splash: Image.asset(
+          'assets/images/amazonbanner.jpg',
+        ),
+        nextScreen: HomeScreen(),
+        splashIconSize: 200,
+        splashTransition: SplashTransition.fadeTransition,
+      ),
     );
   }
 }

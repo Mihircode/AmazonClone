@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Product {
   String imageUrl;
   String name;
@@ -5,10 +7,10 @@ class Product {
   String description;
 
   Product({
-    required this.imageUrl,
-    required this.name,
-    required this.price,
-    required this.description,
+    @required this.imageUrl,
+    @required this.name,
+    @required this.price,
+    @required this.description,
   });
 }
 
