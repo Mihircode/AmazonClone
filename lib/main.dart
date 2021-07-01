@@ -1,4 +1,6 @@
 import 'package:amazonclone/screens/home_screen.dart';
+import 'package:amazonclone/screens/login_page.dart';
+import 'package:amazonclone/screens/main_screen.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         splash: Image.asset(
           'assets/images/amazonbanner.jpg',
         ),
-        nextScreen: HomeScreen(),
+        nextScreen: Authen(),
         splashIconSize: 200,
         splashTransition: SplashTransition.fadeTransition,
       ),
