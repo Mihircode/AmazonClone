@@ -52,7 +52,7 @@ class ProductCarousel extends StatelessWidget {
                 Text(
                   '\$${products[index].price.toStringAsFixed(2)}',
                   style: TextStyle(
-                    color: Colors.orange,
+                    color: Colors.orange.shade300,
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -63,7 +63,7 @@ class ProductCarousel extends StatelessWidget {
                 FlatButton(
                   padding: EdgeInsets.all(4.0),
                   onPressed: () => print('Add to Cart'),
-                  color: Colors.blueAccent,
+                  color: Colors.orange,
                   textColor: Colors.white,
                   child: Text(
                     'Add to cart',
