@@ -20,8 +20,12 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
-        splash: Image.asset(
-          'assets/images/amazonbanner.jpg',
+        splash: Container(
+          margin: EdgeInsets.all(8),
+          padding: EdgeInsets.all(8),
+          child: Image.asset(
+            'assets/images/amazon2.png',
+          ),
         ),
         nextScreen: Authen(),
         splashIconSize: 200,

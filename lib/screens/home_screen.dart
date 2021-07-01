@@ -2,6 +2,7 @@ import 'package:amazonclone/models/product_model.dart';
 import 'package:amazonclone/widgets/MyCarousel.dart';
 
 import 'package:amazonclone/widgets/customAppbar.dart';
+import 'package:amazonclone/widgets/drawer.dart';
 import 'package:amazonclone/widgets/poster.dart';
 import 'package:amazonclone/widgets/product_carousel.dart';
 import 'package:amazonclone/widgets/search_box.dart';
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       backgroundColor: Colors.white,
       appBar: CustomAppBar(),
       body: ListView(
